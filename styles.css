@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+    /* font-family: Tahoma;
+    font-size: 16px; */
+    background: #2b5876;/* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);/* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Borel', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+#title,
+#description {
+    margin: 0 auto;
+    text-align: center;
+}
+#title{
+    font-size: 46px;
+}
+#description{
+    font-size: 20px;
+}
+.container{
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 700px;
+    min-width: 00px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    /* border-bottom: 3px solid #3b3b4f; */
+}
+
+#survey-form{
+    width: 70vw;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 400px;
+    padding-bottom: 2em;
+}
+
+#survey-form #name-label, #email-label, #number-label, #employment-label,#role-label{
+    display: block;
+    margin: 2rem 0 0.2rem 0;
+}
+
+#survey-form .details input{
+    width: 100%;
+    min-height: 2.5em;
+    margin: 3px 0 0 0;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+#survey-form .information .employment-label select,.referrer, .role{
+    margin-bottom: 2em;
+    width: 100%;
+    min-height: 2.5em;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    color: #ffffff;
+}
+#survey-form .information .employment-label select, .refs{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    border-radius: 10px
+}
+
+#survey-form .information label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+#survey-form .information input{
+    width: unset;
+    vertical-align: middle;
+}
+
+#survey-form .comments label{
+    display: block;
+    margin: 0 0 0.2rem 0;
+}
+
+#survey-form .comments label textarea{
+    width: 100%;
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Borel', cursive;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #0a0a23;
+    border-radius: 10px;
+    border-color: #ffffff;
+    min-width: 200px;
+    color: #ffffff;
+    font-family: 'Borel', cursive;
+    padding-top: 5px;
+}
+input::placeholder{
+    color: #ffffff;
+    font-family: 'Borel', cursive;
+}

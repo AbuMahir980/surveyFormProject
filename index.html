@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking your time to fill out this form</p>
+            <form action="" method="post" id="survey-form">
+                <fieldset class="details">
+                    <label for="name" id="name-label">Name: 
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </label>
+                    <label for="email" id="email-label"> Email:
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </label>
+                    <label for="number" id="number-label"> Age:
+                        <input type="number" id="number" name="number" min="10" max="100" placeholder="10 - 100" required>
+                    </label>  
+                </fieldset>
+                <fieldset class="information">
+                    <label for="dropdown" class="employment-label">Employment Status
+                        <select id="dropdown" id="drop">
+                            <option value=" " disabled selected>Select current role</option>
+                            <option value="1">Student</option>
+                            <option value="2">Employed</option>
+                            <option value="3">Unemployed</option>
+                            <option value="4">Prefer not to say</option>
+                            <option value="5">Others</option>
+                        </select>
+                    </label>
+                    <div class="referrer">
+                        <p class="referrer-label">How did you hear about us:</p>
+                        <div class="refs">
+                            <label for="referrer" ><input type="radio" id="referrer" name="referrer" value="newsletters"> Newsletters </label>
+                            <label for="referrer"><input type="radio" id="referrer" name="referrer" value="friends"> Friends </label>
+                            <label for="referrer"><input type="radio" id="referrer" name="referrer" value="socials"> Socials </label>
+                            <label for="referrer"><input type="radio" id="referrer" name="referrer" value="others"> Others </label>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="role">
+                        <p class="role-label">Select your preferred role:</p> 
+                        <div class="refs">
+                            <label for="roles">
+                                <input type="checkbox" name="roles" id="roles" value="frontend">Frontend Development
+                            </label>
+                            <label for="roles">
+                                <input type="checkbox" name="roles" id="roles" value="backend">Backend Development
+                            </label>
+                            <label for="roles">
+                                <input type="checkbox" name="roles" id="roles" value="mobileApp">Mobile Application Development
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="comments">
+                    <label for="question" id="question-label">Do you have any questions or comments?
+                        <textarea name="question" id="question" cols="20" rows="8">Please type in your questions or comments</textarea>
+                    </label>
+
+                    <button type="submit" id="submit">Submit</button>
+                </fieldset>
+            </form>  
+        </div>
+    </body>
+</html>
